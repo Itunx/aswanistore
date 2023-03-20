@@ -1,0 +1,129 @@
+
+#group{
+   display: grid;
+    gap: 8px; 
+   grid-template-columns: repeat(4,400px);
+  
+}
+
+#cost{
+    display: grid;
+     gap: 4px; 
+    grid-template-columns: repeat(4,350px);
+   
+ }
+ .full{
+   display: grid;
+   gap: 15px;
+   grid-template-columns: repeat(2,50%);
+ }
+ 
+ 
+.container{
+    position: relative;
+}
+.btn{
+    background-color: black;
+    width: 200px;
+    align-items: center;
+    margin: 10px;
+    border: 3px;
+    justify-content: center;
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+#foot{
+   background-color: palegoldenrod;
+   height: 300px;
+}
+.logos{
+   display: grid;
+    grid-template-columns: repeat(3,40%);
+    
+}
+#logo{
+   margin: 60px;
+   padding: 40px;
+}
+#des{
+   display: flex;
+   padding: 60px;
+   margin-left: 30px;
+   
+   justify-content: space-between;
+   
+}
+.designer{
+   /* font-size: larger; */
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+}
+.min{
+   padding:24px
+}
+#read{
+   background-color: black;
+border-radius: 10px;
+font-size: 16px;
+height: 50px;
+color: white;
+   margin: 30px;
+   padding: 12ppx 24px;
+   width: 200px;
+   
+}
+.ot{
+   display: flex;
+   justify-content: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #group{
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(8,300px);
+        overflow-x: scroll;
+         
+     } 
+     #two{
+      display: none;
+     }
+     #one{
+      width: 100%;
+     }
+     .designer{
+      display: flex;
+      font-size: larger;
+     }
+     #cost{
+        display: grid;
+        gap: 4px;
+        grid-template-columns: repeat(4,300px);
+         overflow-x: scroll; 
+         
+     } 
+     #reviews{
+        display: flex;
+        flex-direction: column;
+     }
+     #peach{
+        max-width: 100%;
+     }
+     .pics{
+        display: none;
+     }
+}
